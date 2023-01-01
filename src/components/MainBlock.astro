@@ -1,0 +1,11 @@
+---
+import { classnames, container, margin, maxWidth } from 'classnames/tailwind'
+
+const root = classnames(
+  container('container'),
+  margin('mx-auto'),
+  maxWidth('max-w-6xl')
+)
+---
+
+<main class={root}><slot /></main>

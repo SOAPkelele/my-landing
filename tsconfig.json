@@ -2,10 +2,15 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "baseUrl": "src",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"]
-    }
-  }
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "include": ["src"]
 }

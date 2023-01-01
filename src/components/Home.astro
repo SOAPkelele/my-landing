@@ -1,0 +1,30 @@
+---
+import { AboveNameText, BelowNameText, NameText } from 'components/Text'
+import IconsList from '@components/IconsList'
+import classnames, {
+  alignItems,
+  display,
+  flexDirection,
+  gap,
+  justifyContent,
+  minHeight,
+} from 'classnames/tailwind'
+
+const homeContainer = classnames(
+  display('flex'),
+  flexDirection('flex-row'),
+  justifyContent('justify-center'),
+  alignItems('items-center'),
+  minHeight('min-h-screen'),
+  gap('gap-3', 'sm:gap-6')
+)
+---
+
+<section class={homeContainer} id="home">
+  <IconsList />
+  <div>
+    <AboveNameText>Hi 👋, my name is</AboveNameText>
+    <NameText>Anton Buev</NameText>
+    <BelowNameText>I'm a software developer</BelowNameText>
+  </div>
+</section>
