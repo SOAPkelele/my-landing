@@ -4,12 +4,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "start": "yarn generate-css-types && astro dev",
     "build": "astro check && tsc --noEmit && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate-css-types": "tailwindcss-classnames -o src/classnames/tailwind.ts && prettier --write src/classnames/tailwind.ts"
+    "generate-css-types": "tailwindcss-classnames -i ./tailwind.config.cjs -o src/classnames/tailwind.ts && prettier --write src/classnames/tailwind.ts"
   },
   "dependencies": {
     "astro": "^1.8.0"
