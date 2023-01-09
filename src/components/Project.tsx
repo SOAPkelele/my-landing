@@ -108,7 +108,9 @@ export default function ({ project }: { project: Project }) {
         </a>
         {project?.github && <GithubIcon link={project.github} />}
       </div>
-      <ProjectSubtitle>{project.subtitle}</ProjectSubtitle>
+      {project?.subtitle && (
+        <ProjectSubtitle>{project.subtitle}</ProjectSubtitle>
+      )}
       {project.description.map((p) => (
         <ProjectDescription>{p}</ProjectDescription>
       ))}

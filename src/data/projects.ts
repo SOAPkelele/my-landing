@@ -3,7 +3,7 @@ import type Project from 'models/Project'
 const projects: Project[] = [
   {
     title: 'Захвати',
-    subtitle: 'A delivery service using crowdshipping mechanics.',
+    subtitle: 'A delivery service using crowdshipping mechanics',
     url: 'https://parcel.buev.tech',
     description: [
       "While browsing through Telegram groups, I noticed that many people were seeking someone who could travel to their city from another location to bring them documents or other items. That's when I had the idea to create this service. My service connects individuals who need help delivering a parcel or documents from one location to another, no matter where they are located.",
@@ -19,7 +19,7 @@ const projects: Project[] = [
   },
   {
     title: '@surfwaybookingbot',
-    subtitle: 'Telegram bot for booking surf classes.',
+    subtitle: 'Telegram bot for booking surf classes',
     url: 'https://t.me/surfwaybookingbot',
     description: [
       "This is my biggest and most complex bot I've done. It automates the process of booking classes, purchasing and activating certificates, and making deposits. I've connected it to a payment solution and made integration with a CRM system. The bot features calendar for choosing dates of classes which is implemented using native telegram buttons. The initial schema of database was totally redisigned by me to make it possible to store all types of calendars, classes and certificates. It also has a messaging system. Metabase is used to provide charts and tables for analytics. The bot and metabase run in Docker containers.",
@@ -38,7 +38,7 @@ const projects: Project[] = [
   },
   {
     title: '@workoutybot',
-    subtitle: 'Telegram bot for saving workouts and weight measurements.',
+    subtitle: 'Telegram bot for saving workouts and weight measurements',
     url: 'https://t.me/workoutybot',
     description: [
       "Workoutybot is my favourite pet project. I love sports and some time ago I didn't find an app which would be simple enough and better than a plain textbook, so I created this bot. It provides a minimalistic interface with a calendar to view and save workouts. I also added a graph chart to view weight progress.",
@@ -47,8 +47,23 @@ const projects: Project[] = [
     technologies: ['Python', 'PostgreSQL', 'Redis', 'Docker', 'TypeScript'],
   },
   {
+    title: '@somecoffeebot',
+    url: 'https://t.me/somecoffeebot',
+    description: [
+      'I have created a Telegram bot to demonstrate the capabilities of a WebApp and to showcase the potential for integrating Telegram payments. This project serves as a template for future endeavors and allows me to explore the possibilities of WebApps.',
+    ],
+    technologies: [
+      'TypeScript',
+      'Preact',
+      'TailwindCSS',
+      'Koa',
+      'MongoDB',
+      'grammY',
+    ],
+  },
+  {
     title: '@ltuniversity_bot',
-    subtitle: 'Multilingual Telegram bot for crypto quizzes.',
+    subtitle: 'Multilingual Telegram bot for crypto quizzes',
     github: 'https://github.com/SOAPkelele/nft_quiz_bot/',
     url: 'https://t.me/ltuniversity_bot',
     description: [
@@ -58,7 +73,7 @@ const projects: Project[] = [
   },
   {
     title: 'Smart camera',
-    subtitle: 'Raspberry Pi and camera to detect people.',
+    subtitle: 'Raspberry Pi and camera to detect people',
     github: 'https://github.com/soapkelele/smart-camera',
     description: [
       "A coursework project for Sberbank's internal use. It's a program to identify people who perform maintenance and repair of equipment in the office environment. I found, trained and compressed a neural network so we could start it on a Raspberry  Pi.",
