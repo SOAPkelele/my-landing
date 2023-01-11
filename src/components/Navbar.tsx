@@ -69,11 +69,11 @@ const LinksList = () => {
   return (
     <ul class={navListContainer}>
       {linksList.map((link) => (
-        <a href={link.address}>
-          <li>
+        <li>
+          <a href={link.address}>
             <NavBarText>{link.buttonName}</NavBarText>
-          </li>
-        </a>
+          </a>
+        </li>
       ))}
     </ul>
   )

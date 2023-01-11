@@ -89,7 +89,12 @@ export default function IconsList() {
     <ul className={iconsList}>
       {iconButtonsList.map((icon) => (
         <li>
-          <a href={icon.link} alt={icon.name} target="_blank">
+          <a
+            href={icon.link}
+            alt={icon.name}
+            aria-label="social-link"
+            target="_blank"
+          >
             {icon.svg}
           </a>
         </li>

@@ -87,7 +87,7 @@ const githubIconContainer = classnames(
 
 function GithubIcon({ link }: { link: string }) {
   return (
-    <a href={link} alt="github" target="_blank">
+    <a href={link} alt="github" target="_blank" aria-label="github_repo">
       <svg
         viewBox="0 0 30 30"
         xmlns="http://www.w3.org/2000/svg"
@@ -103,9 +103,13 @@ export default function ({ project }: { project: Project }) {
   return (
     <div className={projectContainer}>
       <div className={titleContainer}>
-        <a href={project?.url} target="_blank">
+        {project.url ? (
+          <a href={project.url} target="_blank" aria-label="project_name">
+            <ProjectTitle>{project.title}</ProjectTitle>
+          </a>
+        ) : (
           <ProjectTitle>{project.title}</ProjectTitle>
-        </a>
+        )}
         {project?.github && <GithubIcon link={project.github} />}
       </div>
       {project?.subtitle && (
