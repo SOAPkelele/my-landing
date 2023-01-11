@@ -10,6 +10,9 @@ import preact from '@astrojs/preact';
 import compress from "astro-compress";
 
 // https://astro.build/config
+import compressor from "astro-compressor";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), preact(), compress()]
+  integrations: [tailwind(), preact(), compress(), compressor()]
 });
