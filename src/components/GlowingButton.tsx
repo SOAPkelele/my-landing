@@ -44,11 +44,8 @@ export default function () {
     <div class={resumeButtonWrapper}>
       <div class={blurBaground}></div>
       <button class={resumeButton}>
-        <a
-          href="https://drive.google.com/file/d/1pvlxKrP5rC8zgeVaWa3XY2gd7KM83YWq/view?usp=share_link"
-          target="_blank"
-        >
-          <NavBarText>resume</NavBarText>
+        <a href="#projects">
+          <NavBarText>projects</NavBarText>
         </a>
       </button>
     </div>

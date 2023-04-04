@@ -1,6 +1,6 @@
 import { NavBarText } from '@components/Text'
 
-import ResumeButton from '@components/ResumeButton'
+import GlowingButton from '@components/GlowingButton'
 import classnames, {
   alignItems,
   backgroundColor,
@@ -62,7 +62,6 @@ const navListContainer = classnames(
 const linksList = [
   { buttonName: 'home', address: '#home' },
   { buttonName: 'about', address: '#about' },
-  { buttonName: 'projects', address: '#projects' },
 ]
 
 const LinksList = () => {
@@ -88,7 +87,7 @@ export default function () {
     >
       <nav className={navbarContainer}>
         <LinksList />
-        <ResumeButton />
+        <GlowingButton />
       </nav>
     </header>
   )

@@ -19,7 +19,7 @@ const projects: Project[] = [
     ],
   },
   {
-    title: 'Захвати',
+    title: 'GetParcel',
     subtitle: 'A delivery service using crowdshipping mechanics',
     url: 'https://parcel.buev.tech',
     description: [

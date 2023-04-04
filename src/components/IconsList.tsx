@@ -50,7 +50,7 @@ const iconButtonsList = [
   },
   {
     name: 'linkedin',
-    link: 'https://www.linkedin.com/in/anton-buev-6a1127254/',
+    link: 'https://www.linkedin.com/in/anton-buev/',
     svg: (
       <svg
         className={iconContainer}
