@@ -4,7 +4,7 @@ const projects: Project[] = [
   {
     title: 'Indexify',
     subtitle: 'A service for creating the navigation of Telegram channels',
-    url: 'https://indexify.cc',
+    url: 'https://indexify.cc/nomadmood',
     description: [
       'I developed a service to assist individuals in creating navigation for their Telegram channels. While browsing various channels, I noticed a lack of navigation or poorly designed ones, which inspired me to create a simple and user-friendly tool. With just a few clicks, users can create a navigation system for their channels, grouping posts by topic and sharing them. Moreover, users can read all posts directly within the app, eliminating the need to switch between Telegram and the browser.',
     ],
