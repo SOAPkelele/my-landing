@@ -21,7 +21,7 @@ const projects: Project[] = [
   {
     title: 'GetParcel',
     subtitle: 'A delivery service using crowdshipping mechanics',
-    url: 'https://parcel.buev.tech',
+    url: 'https://t.me/getparcelbot',
     description: [
       "While browsing through Telegram groups, I noticed that many people were seeking someone who could travel to their city from another location to bring them documents or other items. That's when I had the idea to create this service. My service connects individuals who need help delivering a parcel or documents from one location to another, no matter where they are located.",
     ],
